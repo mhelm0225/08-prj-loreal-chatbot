@@ -7,13 +7,13 @@
 
 /* L'Oréal Brand Colors */
 :root {
-  --loreal-orange: #FF6E00;
+  --loreal-orange: #000000;
   --loreal-black: #000000;
-  --loreal-white: #FFFFFF;
-  --loreal-gold: #D4AF37;
-  --loreal-light-gray: #F5F5F5;
+  --loreal-white: #ffffff;
+  --loreal-gold: #d4af37;
+  --loreal-light-gray: #f5f5f5;
   --loreal-dark-gray: #333333;
-  --loreal-border: #E0E0E0;
+  --loreal-border: #e0e0e0;
 }
 
 /* —— body + fonts —— */
@@ -84,7 +84,7 @@ body {
   line-height: 1.5;
   overflow-y: auto;
   background: var(--loreal-white);
-  box-shadow: 0 4px 12px rgba(255, 110, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Scrollbar styling for better appearance */
@@ -103,7 +103,7 @@ body {
 }
 
 .chat-window::-webkit-scrollbar-thumb:hover {
-  background: #E66100;
+  background: #000000;
 }
 
 /* Message containers for proper alignment */
@@ -144,10 +144,10 @@ body {
 }
 
 .user-message {
-  background: linear-gradient(135deg, var(--loreal-orange) 0%, #E66100 100%);
+  background: linear-gradient(135deg, var(--loreal-orange) 0%, #000000 100%);
   color: var(--loreal-white);
   border-bottom-right-radius: 4px;
-  box-shadow: 0 2px 8px rgba(255, 110, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .bot-message {
@@ -215,12 +215,12 @@ body {
 .chat-form input:focus {
   outline: none;
   border-color: var(--loreal-orange);
-  box-shadow: 0 0 0 3px rgba(255, 110, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .chat-form button {
   font-size: 18px;
-  background: linear-gradient(135deg, var(--loreal-orange) 0%, #E66100 100%);
+  background: linear-gradient(135deg, var(--loreal-orange) 0%, #000000 100%);
   color: var(--loreal-white);
   border: none;
   border-radius: 50%;
@@ -232,7 +232,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-  box-shadow: 0 4px 12px rgba(255, 110, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .chat-form button .material-icons {
@@ -240,9 +240,11 @@ body {
 }
 
 .chat-form button:hover {
-  background: linear-gradient(135deg, #E66100 0%, #CC5800 100%);
+  background: var(--loreal-white);
+  color: var(--loreal-black);
   transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(255, 110, 0, 0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--loreal-black);
 }
 
 .chat-form button:active {
@@ -290,6 +292,6 @@ body {
 }
 
 .site-footer a:hover {
-  color: #E66100;
+  color: #000000;
   text-decoration: underline;
 }
