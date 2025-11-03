@@ -19,12 +19,18 @@
     <div class="page-wrapper">
       <!------- Header / Branding ------->
       <header class="site-header">
+        <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="site-logo" />
         <h1 class="site-title">Smart Product Advisor</h1>
       </header>
 
       <!------- Chat Area ------->
       <main>
         <section class="chatbox">
+          <div class="chat-info">
+            <span class="context-indicator" id="contextIndicator">
+              💬 Conversation history active
+            </span>
+          </div>
           <div id="chatWindow" class="chat-window">
             <!-- messages will be appended here via JS -->
           </div>
@@ -59,8 +65,7 @@
       </footer>
     </div>
 
-    <!-- secrets.js can be removed when using Cloudflare Workers for API requests -->
-    <script src="secrets.js"></script>
+    <!-- No longer need secrets.js when using Cloudflare Workers -->
     <script src="script.js"></script>
   </body>
 </html>
